@@ -40,8 +40,6 @@ form input {
 
 main {
     padding-top: 70px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 main aside, main article, main section {
@@ -51,7 +49,7 @@ main aside, main article, main section {
 }
 
 main .hotel {
-    flex-grow: 3;
+    flex-grow: 5;
     order: 1;
 }
 
@@ -91,7 +89,7 @@ main .hotel button:hover, main .insert form.flex div button:hover {
 }
 
 main div.flex {
-    flex-grow: 5;
+    flex-grow: 0;
     order: 2;
     flex-direction: column;
 }
@@ -133,14 +131,8 @@ main .insert form.flex div {
     border-bottom: 1px solid #b1b1b1;
 }
 
-main .insert form.flex div button#clear {
-    background: #cc0000;
-}
-
-main .insert form.flex div button#clear:hover {
-    color: #cc0000;
-    background: #FFF;
-    outline: #cc0000 solid 1px;
+main .insert input {
+    width: 100%;
 }
 
 main .summary {
@@ -187,4 +179,16 @@ main .summary div h2 {
     nav a {
         font-size: 15px;
     }
-}
+
+
+    main .search, main .insert {
+        width: initial;
+    }
+
+    main .insert form.flex div {
+        flex-basis: inherit;
+    }
+
+    main .insert form.flex div.button {
+        flex-basis: 100%;
+    }

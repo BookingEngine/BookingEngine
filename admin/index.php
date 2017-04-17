@@ -112,12 +112,10 @@
                             <label>Grand total:</label>
                             <input type="number" name="amount" placeholder="Grand total" required>
                             <label>Pay:</label>
-                            <input type="checkbox" name="pay" placeholder="Guest payed">
+                            <input type="checkbox" name="pay" placeholder="Guest payed" style="width: auto">
                         </div>
                         <div class="button">
                             <button name="booking" type="submit">Booking</button>
-                            <br>
-                            <button id="clear" type="reset">Clear all</button>
                         </div>
                     </form>
                 </section>
