@@ -1,0 +1,190 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a, button {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+td, th {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+form input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main {
+    padding-top: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+main aside, main article, main section {
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+}
+
+main .hotel {
+    flex-grow: 3;
+    order: 1;
+}
+
+main .hotel .img {
+    height: 200px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+main .hotel h1, main .summary h1, main .insert h1 {
+    color: #616161;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main .hotel p {
+    color: #616161;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+main .hotel button, main .insert form.flex div button {
+    border: 0;
+    background: #123456;
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+    transition: background 0.4s, color 0.4s;
+}
+
+main .hotel button:hover, main .insert form.flex div button:hover {
+    background: #FFF;
+    color: #123456;
+    outline: #123456 solid 1px;
+}
+
+main div.flex {
+    flex-grow: 5;
+    order: 2;
+    flex-direction: column;
+}
+
+main .search, main .insert {
+    width: 96%;
+    padding: 10px;
+}
+
+main .search form, {
+    padding: 10px;
+}
+
+main .search input, main .search select, main .insert input {
+    height: 40px;
+    color: #616161;
+}
+
+main .search input:focus {
+    text-transform: uppercase;
+}
+
+main .search input::-webkit-input-placeholder {
+    text-transform: initial;
+}
+
+main .search select {
+    border: 0;
+    outline: none;
+}
+
+main .insert form.flex {
+    justify-content: space-around;
+}
+
+main .insert form.flex div {
+    display: grid;
+    flex-basis: 45%;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+main .insert form.flex div button#clear {
+    background: #cc0000;
+}
+
+main .insert form.flex div button#clear:hover {
+    color: #cc0000;
+    background: #FFF;
+    outline: #cc0000 solid 1px;
+}
+
+main .summary {
+    flex-grow: 2;
+    order: 3;
+    padding: 10px;
+}
+
+main .summary div {
+    margin-top: 25px;
+    border-top: 1px solid #b1b1b1;
+}
+
+main .summary div h1 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+main .summary div h2 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px), screen and (max-device-width: 950px) {
+    nav form {
+        display: none;
+    }
+
+    nav .account {
+        display: none;
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    nav div {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}

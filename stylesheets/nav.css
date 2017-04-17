@@ -1,0 +1,87 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #123456;
+}
+
+nav * {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav h1 {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav h2 {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+nav section {
+    background: #263d5f;
+}
+
+nav div {
+    margin-left: 50px;
+}
+
+nav select {
+    background: #123456;
+    border: 0;
+    color: #FFF;
+    outline: none;
+}
+
+nav select::-webkit-input-placeholder {
+    color: #b1b1b1;
+}
+
+
+nav form {
+    margin-left: auto;
+}
+
+nav input {
+    color: #FFF;
+}
+
+nav input::-webkit-input-placeholder {
+    text-transform: initial;
+    color: #b1b1b1;
+}
+
+nav input:focus {
+    text-transform: uppercase;
+}
+
+.padding-left {
+    padding-left: 20px;
+}
+
+.padding-right {
+    padding-right: 20px;
+}
+
+nav a {
+    color: #FFF;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    transition: background 0.4s;
+}
+
+nav a:hover {
+    background: #263d5f;
+}

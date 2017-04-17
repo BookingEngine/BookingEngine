@@ -1,0 +1,18 @@
+<?php
+    require_once "../../../libraries/PHPMailer/PHPMailerAutoload.php";
+
+    $mail = new PHPMailer();
+
+    $mail->IsSMTP();
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = "tls";
+    $mail->Host = "smtp.gmail.com";
+    $mail->Port = 587;
+    $mail->Username = "fedevitale99@gmail.com";
+    $mail->Password = "ibvcutuwwejswwyd";
+
+    $mail->SMTPDebug = 0;
+
+    $mail->From = "support@bookingengine.com";
+    $mail->FromName = "BookingEngine";
+    $mail->IsHTML(true);

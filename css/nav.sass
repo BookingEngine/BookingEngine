@@ -1,0 +1,113 @@
+// compileCompact: ../navbar.css
+
+@import "colors"
+
+nav
+  position: fixed
+  background: $navbg
+  color: #fff !important
+  height: 50px
+  width: 100vw
+  display: table
+
+  .brand
+    float: left
+    position: relative
+
+    a
+      transition: all 0.25s ease
+      cursor: pointer!important
+      display: inline-block
+      color: white
+      text-align: center
+      padding: 20px 16px
+      text-decoration: none
+
+      &:hover
+        color: inherit
+
+  ul.navbar
+    float: right
+    text-align: right
+    height: 50px
+    list-style: none
+    padding: 0
+    margin: 0
+    display: table
+
+    li.link
+      position: relative
+      right: 0px
+      display: inline
+      transition: background-color 0.25s
+      padding: 23px 0px
+
+      &:hover, &.active
+        background: #fff
+        border-bottom: 5px solid darken($navbg, 15%)
+        color: black !important
+
+      a
+        transition: all 0.25s ease
+        cursor: pointer!important
+        display: inline-block
+        color: white
+        text-align: center
+        padding: 20px 16px
+        text-decoration: none
+
+        &:hover
+          color: inherit
+
+  li.drop
+    position: relative
+    right: 0px
+    display: inline
+    transition: background-color 0.25s
+    padding: 23px 0px
+
+    &:hover, &.active
+      background: darken($navbg, 10%)
+      border-bottom: 5px solid darken($navbg, 15%)
+      color: white !important
+
+  .dropdown
+    transition: all 0.25s ease
+    cursor: pointer!important
+    display: inline-block
+    color: white
+    text-align: center
+    padding: 20px 16px
+    text-decoration: none
+
+    &:hover
+      color: inherit
+
+    .dropdown-content
+      background-color: darken($navbg, 10%)
+      transition: all 0.25s
+      display: none
+      position: absolute
+      z-index: 1
+      top: 64px
+      width: auto
+      text-align: center
+      right: 0px
+
+    .dropdown-content a
+      color: white
+      text-decoration: none
+      display: block
+      width: 96px
+      margin: 0px
+      padding: 15px
+      text-align: center
+      transition: background .25s, color .25s
+
+      &:hover
+        background: darken($navbg, 15%)
+        color: white
+
+    &:hover
+      .dropdown-content
+        display: block

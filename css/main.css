@@ -1,0 +1,87 @@
+@media screen and (max-width: 550px) {
+  .form {
+    padding: 0px 50px; } }
+@media screen and (min-width: 500px) {
+  .form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); } }
+@media screen and (min-width: 850px) {
+  .form {
+    padding: 0px 150px; } }
+.center,
+.center-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+form.form .required::after,
+form .required::after {
+  content: " *";
+  color: red; }
+
+.button.button-success,
+button.button-success,
+input[type="submit"].button-success,
+input[type="reset"].button-success,
+input[type="button"].button-success {
+  border: 0px;
+  background-color: #2fff8f;
+  color: #fff; }
+  .button.button-success:hover,
+  button.button-success:hover,
+  input[type="submit"].button-success:hover,
+  input[type="reset"].button-success:hover,
+  input[type="button"].button-success:hover {
+    background-color: #49e591; }
+
+.button.button-warn,
+button.button-warn,
+input[type="submit"].button-warn,
+input[type="reset"].button-warn,
+input[type="button"].button-warn {
+  border: 0px;
+  background-color: #f4e049;
+  color: #fff; }
+  .button.button-warn:hover,
+  button.button-warn:hover,
+  input[type="submit"].button-warn:hover,
+  input[type="reset"].button-warn:hover,
+  input[type="button"].button-warn:hover {
+    background-color: #dcce61; }
+
+input[type="reset"] {
+  margin-right: 10px; }
+
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+body, html {
+  width: 100vw;
+  max-height: 100vh; }
+
+.alert {
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  padding: 10px; }
+  .alert.danger {
+    background: #ff065a;
+    color: white; }
+  .alert.success {
+    background: #6fff30;
+    color: white; }
+
+/*# sourceMappingURL=main.css.map */

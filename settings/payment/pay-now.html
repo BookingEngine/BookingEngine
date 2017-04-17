@@ -1,0 +1,21 @@
+<form method="post" name="paypal_form" action="https://www.sandbox.paypal.com/cgi-bin/webscr">
+<input type="hidden" name="business" value="filippo.cozzini@gmail.com" />
+<input type="hidden" name="cmd" value="_xclick" />
+ 
+<!-- informazioni sulla transazione -->
+<input type="hidden" name="notify_url" value="https://riomolini.com/payment/ipn.php">
+<input type="hidden" name="rm" value="2" />
+<input type="hidden" name="currency_code" value="EUR" />
+ 
+<!-- informazioni sul pagamento -->
+ 
+<!-- informazioni sul prodotto -->
+<input type="hidden" name="item_name" value="Guida PayPal IPN con PHP" />
+<input type="hidden" name="amount" value="1.01" />
+ 
+<!-- questo campo conterrà le info che torneranno al sito e viene usato per passare l'id utente o altre info -->
+<input type="hidden" name="custom" value="Bd8b9DskLo" />
+
+<!-- pulsante pagamento -->
+<input type="image" src="http://www.paypal.com/it_IT/i/btn/x-click-but01.gif" border="0" name="submit" alt="Paga subito con PayPal" />
+</form>
