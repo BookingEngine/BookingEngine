@@ -40,40 +40,42 @@ form input {
 
 main {
     padding-top: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
 }
 
 main aside, main article, main section {
-    margin: 5px;
+    margin-top: 7px;
     border-radius: 5px;
     border: 1px solid #b1b1b1;
 }
 
-main .hotel {
-    flex-grow: 5;
-    order: 1;
+main .hotel, main .user {
+    width: 100%;
 }
 
-main .hotel .img {
+main .hotel .img{
     height: 200px;
     background-size: cover;
     border-radius: 5px;
 }
 
-main .hotel h1, main .summary h1, main .insert h1 {
+main .hotel h1, main .user h1, main .summary h1, main .insert h1 {
     color: #616161;
     font-size: 22px;
     font-weight: 400;
     text-align: center;
 }
 
-main .hotel p {
+main .hotel p, main .user p {
     color: #616161;
     font-size: 16px;
     font-weight: 300;
     text-align: center;
 }
 
-main .hotel button, main .insert form.flex div button {
+main .hotel button, main .user button, main .insert form.flex div button {
     border: 0;
     background: #123456;
     color: #FFF;
@@ -88,10 +90,21 @@ main .hotel button:hover, main .insert form.flex div button:hover {
     outline: #123456 solid 1px;
 }
 
+main .user .img {
+    height: 75px;
+}
+
 main div.flex {
     flex-grow: 0;
-    order: 2;
     flex-direction: column;
+}
+
+main div.left-part {
+    order: 1;
+}
+
+main div.center-part {
+    order: 2;
 }
 
 main .search, main .insert {
