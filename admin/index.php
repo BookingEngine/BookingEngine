@@ -51,7 +51,7 @@
                 <input type="text" name="search" placeholder="Search">
             </form>
             <section class="account">
-                <h2>Filippo.cozzini</h2>
+                <h2>John Doe</h2>
             </section>
         </nav>
 
@@ -71,7 +71,7 @@
                     </div>
                     <h1>john.doe@example.com</h1>
                     <p>John Doe</p>
-                    <p style="text-align: center"><button name="logout">Logout</button><
+                    <p style="text-align: center"><button name="logout">Logout</button><button name="settings">Settings</button></p>
                 </aside>
             </div>
             <div class="flex center-part">
@@ -150,5 +150,8 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <p>Copyright 2017 - BookingEngine</p>
+        </footer>
     </body>
 </html>

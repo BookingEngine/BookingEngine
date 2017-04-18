@@ -84,7 +84,7 @@ main .hotel button, main .user button, main .insert form.flex div button {
     transition: background 0.4s, color 0.4s;
 }
 
-main .hotel button:hover, main .insert form.flex div button:hover {
+main .hotel button:hover, main .user button:hover, main .insert form.flex div button:hover {
     background: #FFF;
     color: #123456;
     outline: #123456 solid 1px;
@@ -92,6 +92,11 @@ main .hotel button:hover, main .insert form.flex div button:hover {
 
 main .user .img {
     height: 75px;
+}
+
+main .user button {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 main div.flex {
@@ -170,6 +175,16 @@ main .summary div h2 {
     text-align: center;
 }
 
+footer {
+    background: #263d5f;
+    padding: 10px;
+}
+
+footer p {
+    color:#b1b1b1;
+    font-size: 10px;
+}
+
 @media screen and (max-width: 950px), screen and (max-device-width: 950px) {
     nav form {
         display: none;
@@ -199,9 +214,10 @@ main .summary div h2 {
     }
 
     main .insert form.flex div {
-        flex-basis: inherit;
+        flex-basis: 90%;
     }
 
     main .insert form.flex div.button {
         flex-basis: 100%;
     }
+}
