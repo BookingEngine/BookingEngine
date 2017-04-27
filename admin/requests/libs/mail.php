@@ -8,8 +8,8 @@
     $mail->SMTPSecure = "tls";
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587;
-    $mail->Username = "fedevitale99@gmail.com";
-    $mail->Password = "ibvcutuwwejswwyd";
+    $mail->Username = "jdoe@gmail.com";
+    $mail->Password = "***************";
 
     $mail->SMTPDebug = 0;
 
